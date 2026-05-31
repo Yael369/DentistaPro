@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Transiciones suaves */
+* {
+    transition-property:
+        background-color, border-color, color, fill, stroke, opacity,
+        box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Sidebar scroll personalizado */
+aside::-webkit-scrollbar {
+    width: 4px;
+}
+aside::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+aside::-webkit-scrollbar-thumb {
+    background: #0ea5e9;
+    border-radius: 2px;
+}
